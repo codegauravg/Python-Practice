@@ -27,9 +27,11 @@ def up_to_vowel(s):
     'cs'
     '''
 
+    # before_vowel contains all the characters found in s[0:i].
     before_vowel = ''
     i = 0
 
+    # Accumulate the non-vowels at the beginning of the string.
     while i < len(s) and not (s[i] in 'aeiouAEIOU'):
         before_vowel = before_vowel + s[i]
         i = i + 1
